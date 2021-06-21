@@ -114,7 +114,7 @@ nohup ./JDC &
 ```
 cd public
 
-wget https://ghproxy.com/https://github.com/Corvus091/JDC-web/releases/download/v2.0.2/dist.zip && unzip dist.zip
+wget https://ghproxy.com/https://github.com/Corvus091/JDC/releases/download/v2.0.2/dist.zip && unzip dist.zip
 
 ```
 
