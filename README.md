@@ -24,6 +24,7 @@ docker run -dit \
   -v $PWD/QL/scripts:/ql/scripts \
   -v $PWD/QL/jbot:/ql/jbot \
   whyour/qinglong:latest
+  limoe/qinglong:latest //2.2.0版本
 ```
 
 等待一段时间后，在浏览器输入ip:5700 即可登录青龙面板
