@@ -41,11 +41,11 @@ rm -rf JDC config.toml
 ```
 //如果你是amd64架构（服务器，PC等）
 
-wget https://ghproxy.com/https://github.com/shufflewzc/JDC/releases/download/2.0.0/linux_amd64.zip && unzip linux_amd64.zip
+wget https://ghproxy.com/https://github.com/Corvus091/JDC/releases/download/v2.0.2/linux_amd64.zip && unzip linux_amd64.zip
 
 //如果你是arm架构（N1，路由器，树莓派等）
 
-wget https://ghproxy.com/https://github.com/shufflewzc/JDC/releases/download/2.0.0/linux_arm.zip && unzip linux_arm.zip
+wget https://ghproxy.com/https://github.com/Corvus091/JDC/releases/download/v2.0.2/linux_arm.zip && unzip linux_arm.zip
 
 ```
 
@@ -77,7 +77,7 @@ nohup ./JDC &
 ```
 cd public
 
-wget https://ghproxy.com/https://github.com/shufflewzc/JDC-web/releases/download/2.0.0/dist.zip && unzip dist.zip
+wget https://ghproxy.com/https://github.com/Corvus091/JDC-web/releases/download/v2.0.2/dist.zip && unzip dist.zip
 
 ```
 
