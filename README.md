@@ -1,8 +1,44 @@
+青龙面板安装：
+首先安装docker
+
+```jsx
+sudo yum check-update
+curl -fsSL https://get.docker.com/ | sh
+sudo systemctl start docker
+sudo systemctl status docker
+sudo systemctl enable docker
+```
+
+安装完成后配置青龙面板
+
+```jsx
+docker run -dit \
+  --name QL \
+  --hostname QL \
+  --restart always \
+  -p 5700:5700 \
+  -v $PWD/QL/config:/ql/config \
+  -v $PWD/QL/log:/ql/log \
+  -v $PWD/QL/db:/ql/db \
+  -v $PWD/QL/scripts:/ql/scripts \
+  -v $PWD/QL/jbot:/ql/jbot \
+  whyour/qinglong:latest
+```
+
+等待一段时间后，在浏览器输入ip:5700 即可登录青龙面板
+用户名为admin 密码是 adminadmin
+
+重置密码
+登录成功后，在/root/QL/config 中找到auth.json
+
 ### **软件介绍**
 
 本程序仅限青龙面板 2.0 对接使用，添加自助扫码功能。更多功能如下：
 
 扫码添加 / 更新 cookie删除 cookie查看单用户日志
+
+
+
 
 ### **第一步 安装依赖**
 
@@ -13,7 +49,6 @@
 apt install wget unzip
 //centos
 yum install wget unzip -y
-
 ```
 ### 第二步 停止进程（新安装的忽略，跳到第三步看）
 
